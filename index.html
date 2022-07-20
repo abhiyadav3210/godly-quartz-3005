@@ -1,0 +1,300 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 10px;
+            border: 1px solid red;
+            height: 10vh;
+        }
+        
+        #navbar>#right {
+            display: flex;
+            gap: 28px;
+            border: 1px solid blue;
+            height: 10vh;
+        }
+        
+        #navbar>#left {
+            display: flex;
+            border: 1px solid blue;
+            gap: 28px;
+            height: 10vh;
+            margin-left: 90px;
+        }
+        
+        #right>div>img {
+            height: 200px;
+            width: 200px;
+            margin-top: -97px;
+            margin-left: -20px;
+        }
+        /* #crauserimg {
+            width: 100%;
+        } */
+        
+        #crauser {
+            height: 70%;
+            width: 100%;
+            margin-top: -50px;
+            border: 1px solid blue;
+        }
+        
+        #crauserimg {
+            width: 100%;
+            position: relative;
+        }
+        
+        button {
+            position: absolute;
+            top: 85%;
+            border: 1px solid white;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: bolder;
+            color: white;
+            height: 30px;
+            width: 30px;
+            background-color: rgba(100, 100, 100, 0.009);
+        }
+        
+        button:hover {
+            background-color: antiquewhite;
+            color: black;
+        }
+        
+        button:nth-child(1) {
+            left: 20px;
+        }
+        
+        button:nth-child(3) {
+            right: 91%;
+        }
+        /* signuup css....... */
+        
+        #signup {
+            width: 50%;
+            margin: auto;
+            display: grid;
+            gap: 10px;
+            justify-items: center;
+        }
+        
+        #signup>#form {
+            display: grid;
+            grid-template-columns: repeat(1, 300px);
+            margin: auto;
+            gap: 10px;
+        }
+        
+        #check {
+            text-align: justify;
+            width: 60%;
+            margin: auto;
+        }
+        
+        #btn>button {
+            background-color: rgb(239, 18, 92);
+            padding: 2px 90px;
+            border: 0px;
+            color: white;
+            font-weight: bolder;
+            /* font-size: 17px; */
+        }
+        
+        #signup {
+            position: absolute;
+            background-color: white;
+            z-index: 1000;
+            top: 70px;
+            left: 250px;
+        }
+        
+        #btn>button {
+            border-radius: 0px;
+            margin-left: 100px;
+            font-size: small;
+            padding-right: -80px;
+            border: 1px solid black;
+            text-align: center;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR.......... -->
+
+    <div id="navbar">
+        <div id="right">
+            <div><img src="https://cdn.lovesavingsgroup.com/logos/indiegogo.png" alt=""></div>
+            <div>Explore</div>
+            <div>What We Do</div>
+        </div>
+        <div id="left">
+            <div>For Entrepreneurs</div>
+            <div>Start a Campaign</div>
+            <div><a href="login.html">Log In</a> </div>
+            <div id="sign"> Sign Up</div>
+        </div>
+    </div>
+
+    <!-- TOP SECTION IMAGE CRAUSE.... -->
+    <h2>EMGW</h2>
+    <div id="crauserimg">
+
+        <img id="crauser" src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658245112/jczdjyod9b8gdujqvbym.jpg" alt="">
+        <button id="leftbtn"><</button>
+        <button id="rightbtn">></button>
+
+
+
+    </div>
+
+
+    <!-- sign-up........................ -->
+
+    <div id="signup">
+
+        <!-- <h1>Welcome!</h1>
+        <h3>Sign up to join Indiegogo.</h3>
+        <div id="form">
+            <form>
+                <label for="">First Name</label>
+                <input type="text" id="firstname" placeholder="Your First Name" />
+                <label for="">Last Name</label>
+                <input type="text" id="lastname" placeholder="Your last Name" />
+                <label for="">Email</label>
+                <input type="email" id="email" placeholder="Your Email">
+                <label for="">Password</label>
+                <input type="password" id="password" placeholder="Your Password">
+
+            </form>
+        </div>
+        <div id="check">
+            <input type="checkbox" name="">I agree to the Terms of Use and have read and understand the Privacy Policy
+        </div>
+        <div id="btn">
+            <button>CREATE ACCOUNT</button> -->
+        <!-- </div> -->
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- for crouser image..... -->
+<script>
+    let imagelinks = ["https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658245112/jczdjyod9b8gdujqvbym.jpg", "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658245274/qeg3izrxrngmn1rnhiju.jpg", "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658244913/mloerh9s6w3vjaqfqddv.jpg", "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658244749/flc5yf33kcubwtirrfyd.jpg"]
+
+    let leftbtn = document.querySelector("#leftbtn");
+    let rightbtn = document.querySelector("#rightbtn");
+    let imagestate = 0;
+    let crauser = document.querySelector("#crauser")
+    rightbtn.addEventListener("click", function() {
+        imagestate++;
+        if (imagestate === imagelinks.length) {
+            imagestate = 0;
+        }
+
+        crauser.src = imagelinks[imagestate]
+
+    })
+
+    leftbtn.addEventListener("click", function() {
+        imagestate--;
+        if (imagestate < 0) {
+            imagestate = imagelinks.length - 1
+        }
+
+        crauser.src = imagelinks[imagestate]
+
+    })
+</script>
+
+<!-- for signup................. -->
+
+<script>
+    // <!-- <h1>Welcome!</h1>
+    //     <h3>Sign up to join Indiegogo.</h3>
+    //     <div id="form">
+    //         <form>
+    //             <label for="">First Name</label>
+    //             <input type="text" id="firstname" placeholder="Your First Name" />
+    //             <label for="">Last Name</label>
+    //             <input type="text" id="lastname" placeholder="Your last Name" />
+    //             <label for="">Email</label>
+    //             <input type="email" id="email" placeholder="Your Email">
+    //             <label for="">Password</label>
+    //             <input type="password" id="password" placeholder="Your Password">
+
+    //         </form>
+    //     </div>
+    //     <div id="check">
+    //         <input type="checkbox" name="">I agree to the Terms of Use and have read and understand the Privacy Policy
+    //     </div>
+    //     <div id="btn">
+    //         <button>CREATE ACCOUNT</button>
+    //     // </div> -->
+    document.querySelector("#sign").addEventListener("click", popusign)
+
+    function popusign() {
+
+        let h1 = document.createElement("h1")
+        h1.innerText = "Welcome!"
+        let h3 = document.createElement("h3")
+        h3.innerText = "Sign up to join Indiegogo."
+        let formdiv = document.createElement("div")
+        formdiv.setAttribute("id", "form")
+        let label1 = document.createElement("label")
+        label1.innerText = "First Name"
+        let input1 = document.createElement("input")
+        input1.setAttribute("type", "text")
+        input1.setAttribute("id", "firstname")
+        input1.setAttribute("placeholder", "Enter your first name")
+
+        let label2 = document.createElement("label")
+        label2.innerText = "Last Name"
+        let input2 = document.createElement("input")
+        input2.setAttribute("type", "text")
+        input2.setAttribute("id", "lastname")
+        input2.setAttribute("placeholder", "Enter your last name")
+
+        let label3 = document.createElement("label")
+        label3.innerText = "Email"
+        let input3 = document.createElement("input")
+        input3.setAttribute("type", "email")
+        input3.setAttribute("id", "email")
+        input3.setAttribute("placeholder", "Enter your email")
+
+        let label4 = document.createElement("label")
+        label4.innerText = "Password"
+        let input4 = document.createElement("input")
+        input4.setAttribute("type", "password")
+        input4.setAttribute("id", "password")
+        input4.setAttribute("placeholder", "Enter your password")
+
+        let input5 = document.createElement("input")
+        input5.value = "CREATE ACCOUNT"
+        input5.setAttribute("type", "submit")
+            // let divbut = document.createElement("div")
+            // divbut.setAttribute("id", "btn")
+            // let but = document.createElement("button")
+            // but.innerText = "CREATE ACCOUNT"
+            // divbut.append(but)
+
+
+        formdiv.append(label1, input1, label2, input2, label3, input3, label4, input4, input5)
+
+        document.querySelector("#signup").append(h1, h3, formdiv)
+
+    }
+</script>
