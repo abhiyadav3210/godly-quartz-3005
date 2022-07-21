@@ -1,0 +1,87 @@
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    height: 10vh;
+}
+
+#navbar>#right {
+    display: flex;
+    gap: 28px;
+    /* border: 1px solid blue; */
+    height: 10vh;
+}
+
+#navbar>#left {
+    display: flex;
+    /* border: 1px solid blue; */
+    gap: 28px;
+    height: 10vh;
+    margin-left: 90px;
+}
+
+#right>div>img {
+    height: 200px;
+    width: 200px;
+    margin-top: -97px;
+    margin-left: -20px;
+}
+
+
+/* crausing top images.....csss............   */
+
+#crauser {
+    height: 70%;
+    width: 100%;
+    margin-top: -50px;
+}
+
+#crauserimg {
+    width: 100%;
+    position: relative;
+}
+
+#rightbtn {
+    position: absolute;
+    top: 85%;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(100, 100, 100, 0.009);
+}
+
+#leftbtn {
+    position: absolute;
+    top: 85%;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(100, 100, 100, 0.009);
+}
+
+#leftbtn:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+#rightbtn:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+button:nth-child(2) {
+    left: 20px;
+}
+
+button:nth-child(3) {
+    right: 91%;
+}
