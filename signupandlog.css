@@ -1,0 +1,97 @@
+#signup {
+    width: 40%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-items: center;
+}
+
+#signup>#form {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    margin: auto;
+    gap: 10px;
+}
+
+#check {
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+}
+
+#btn>button {
+    background-color: rgb(239, 18, 92);
+    padding: 2px 90px;
+    border: 0px;
+    color: white;
+    font-weight: bolder;
+    /* font-size: 17px; */
+}
+
+#signup {
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    top: 90px;
+    left: 250px;
+}
+
+#btn>button {
+    border-radius: 0px;
+    margin-left: 100px;
+    font-size: small;
+    padding-right: -80px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+/* login css............... */
+
+#login {
+    width: 40%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-items: center;
+}
+
+#login>#logform {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    margin: auto;
+    gap: 10px;
+}
+
+#login>div>form {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    margin: auto;
+    gap: 10px;
+}
+
+#check {
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+}
+
+#btn>button {
+    background-color: rgb(239, 18, 92);
+    padding: 2px 120px;
+    border: 0px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+#login {
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    top: 90px;
+    left: 250px;
+}

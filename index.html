@@ -5,143 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="crouser.css">
+    <link rel="stylesheet" href="signupandlog.css">
+    <link rel="stylesheet" href="popular.css">
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="cycle.css">
+    <link rel="stylesheet" href="review.css">
     <style>
-        #navbar {
+        #footer {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-top: 10px;
-            border: 1px solid red;
-            height: 10vh;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            height: auto;
+            margin-top: 29px;
+            background-color: #F2F2F2
         }
         
-        #navbar>#right {
-            display: flex;
-            gap: 28px;
-            border: 1px solid blue;
-            height: 10vh;
+        #footer>div {
+            margin-top: 30px;
         }
         
-        #navbar>#left {
-            display: flex;
-            border: 1px solid blue;
-            gap: 28px;
-            height: 10vh;
-            margin-left: 90px;
+        #footerimg>img {
+            width: 20%;
+            margin-left: 39px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
         }
         
-        #right>div>img {
-            height: 200px;
-            width: 200px;
-            margin-top: -97px;
-            margin-left: -20px;
+        #footerimg>form {
+            display: grid;
+            grid-template-columns: repeat(1, 150px);
         }
-        /* #crauserimg {
-            width: 100%;
-        } */
         
-        #crauser {
-            height: 70%;
-            width: 100%;
+        #social>img {
+            margin-left: 160px;
             margin-top: -50px;
-            border: 1px solid blue;
-        }
-        
-        #crauserimg {
-            width: 100%;
-            position: relative;
-        }
-        
-        button {
-            position: absolute;
-            top: 85%;
-            border: 1px solid white;
-            border-radius: 50%;
-            font-size: 20px;
-            font-weight: bolder;
-            color: white;
-            height: 30px;
-            width: 30px;
-            background-color: rgba(100, 100, 100, 0.009);
-        }
-        
-        button:hover {
-            background-color: antiquewhite;
-            color: black;
-        }
-        
-        button:nth-child(1) {
-            left: 20px;
-        }
-        
-        button:nth-child(3) {
-            right: 91%;
-        }
-        /* signuup css....... */
-        
-        #signup {
-            width: 50%;
-            margin: auto;
-            display: grid;
-            gap: 10px;
-            justify-items: center;
-        }
-        
-        #signup>#form {
-            display: grid;
-            grid-template-columns: repeat(1, 300px);
-            margin: auto;
-            gap: 10px;
-        }
-        
-        #check {
-            text-align: justify;
-            width: 60%;
-            margin: auto;
-        }
-        
-        #btn>button {
-            background-color: rgb(239, 18, 92);
-            padding: 2px 90px;
-            border: 0px;
-            color: white;
-            font-weight: bolder;
-            /* font-size: 17px; */
-        }
-        
-        #signup {
-            position: absolute;
-            background-color: white;
-            z-index: 1000;
-            top: 70px;
-            left: 250px;
-        }
-        
-        #btn>button {
-            border-radius: 0px;
-            margin-left: 100px;
-            font-size: small;
-            padding-right: -80px;
-            border: 1px solid black;
-            text-align: center;
-            margin-top: 70px;
+            height: 80px;
         }
     </style>
+
 </head>
 
 <body>
 
     <!-- NAVBAR.......... -->
-
     <div id="navbar">
         <div id="right">
             <div><img src="https://cdn.lovesavingsgroup.com/logos/indiegogo.png" alt=""></div>
             <div>Explore</div>
             <div>What We Do</div>
         </div>
+
         <div id="left">
             <div>For Entrepreneurs</div>
             <div>Start a Campaign</div>
-            <div><a href="login.html">Log In</a> </div>
+            <div id="log">Log In </div>
             <div id="sign"> Sign Up</div>
         </div>
     </div>
@@ -149,148 +67,261 @@
     <!-- TOP SECTION IMAGE CRAUSE.... -->
     <h2>EMGW</h2>
     <div id="crauserimg">
-
         <img id="crauser" src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658245112/jczdjyod9b8gdujqvbym.jpg" alt="">
         <button id="leftbtn"><</button>
         <button id="rightbtn">></button>
+    </div>
+    <!-- midium portion.............. -->
+    <div id="medium">
+        <h1>Find it first on Indiegogo.</h1>
+        <h3>Indiegogo is where early adopters and innovation seekers find lively, imaginative tech before it hits the mainstream.</h3>
+    </div>
 
+    <!-- popular project part............. -->
+
+    <div id="popular">
+        <!-- <h2>Popular Projects</h2> -->
+        <div><img id="popimg1" src="https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/hsuak6etlkjhpxog1e1u" alt="">
+            <p>Funding</p>
+            <h4>PIX NII: Most Powerful Mini PC with Dual 4K HDMI</h4>
+            <p>0.35lb | Intel N6005 3.3GHz | 16GB+1TB | WI-FI 6/BT5.2 | 2x 4K@60Hz HDMI | RJ45 2.5G | 3x USB 3.2</p>
+            <p>PHONES & ACCESSORIES</p>
+            <p>$218,522 HKD raised
+            </p>
+        </div>
+
+        <div><img id="popimg2" src="https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/vzowbkoxoq4hn6uaniyw" alt="">
+            <p>Funding</p>
+            <h4>PIX NII: Most Powerful Mini PC with Dual 4K HDMI</h3>
+                <p>0.35lb | Intel N6005 3.3GHz | 16GB+1TB | WI-FI 6/BT5.2 | 2x 4K@60Hz HDMI | RJ45 2.5G | 3x USB 3.2</p>
+                <p>PHONES & ACCESSORIES</p>
+                <p>$218,522 HKD raised
+                </p>
+        </div>
+
+        <div><img id="popimg3" src="https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/m9frz16vbuzaarduoxcw" alt="">
+            <p>Funding</p>
+            <h4>PIX NII: Most Powerful Mini PC with Dual 4K HDMI</h4>
+            <p>0.35lb | Intel N6005 3.3GHz | 16GB+1TB | WI-FI 6/BT5.2 | 2x 4K@60Hz HDMI | RJ45 2.5G | 3x USB 3.2</p>
+            <p>PHONES & ACCESSORIES</p>
+            <p>$218,522 HKD raised
+            </p>
+        </div>
+
+        <div><img id="popimg4" src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/n4o1ewux6zcyq8vxzj8t" alt="">
+            <p>Funding</p>
+            <h4>PIX NII: Most Powerful Mini PC with Dual 4K HDMI</h4>
+            <p>0.35lb | Intel N6005 3.3GHz | 16GB+1TB | WI-FI 6/BT5.2 | 2x 4K@60Hz HDMI | RJ45 2.5G | 3x USB 3.2</p>
+            <p>PHONES & ACCESSORIES</p>
+            <p>$218,522 HKD raised
+            </p>
+        </div>
+
+        <div>
+            <button id="popleftbtn"><</button>
+            <button id="poprightbtn">></button>
+        </div>
 
 
     </div>
 
+    <!-- for collection part......... -->
+    <div id="collection"></div>
+
+    <!-- tiltcycle part......... -->
+
+    <div id="cycle">
+        <img src="https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/homepage/cf-bg-desktop-lg.jpg" alt="">
+        <h1>Back the project, take the ride</h1>
+        <p>Indiegogo is your destination for clever innovations in tech, design, and more, often with special perks and pricing for early adopters. Back a campaign, share your ideas and feedback with the project team - and join the risks and rewards of bringing
+            new products to life.</p>
+    </div>
+    <div id="category">
+        <div id="upper">
+            <h1>Which categories interest you?</h1>
+            <p>Discover projects just for you and get great recommendations when you select your interests.</p>
+            <button>SIGN UP AND SELECT INTERESTS</button>
+            <p>Or explore our top categories</p>
+        </div>
+        <div id="explore">
+            <div><img src="https://p.kindpng.com/picc/s/25-257281_red-house-logo-hd-png-download.png" alt="">
+                <p>HOME</p>
+            </div>
+            <div><img src="https://www.seekpng.com/png/detail/278-2783353_mobile-mobile-phone-icon-red-png.png" alt="">
+                <p>PHONES & ACCESSORIES</p>
+            </div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJtrDseD3TDqTMFn3pEJ8z5ecvLe-GOX0VQ&usqp=CAU" alt="">
+                <p>TRAVEL AND OUTDOOR</p>
+            </div>
+            <div><img src="https://media.gettyimages.com/vectors/heart-smart-watch-icon-vector-id1170420926?s=612x612" alt="">
+                <p>HEALTH & FITNESS</p>
+            </div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwsA63Lo7THpWQwz1pwN5pkW0qcFwNlIl6_w&usqp=CAU" alt="">
+                <p>AUDIO</p>
+            </div>
+            <div><img src="https://image.shutterstock.com/image-vector/video-camera-logo-260nw-531589987.jpg" alt="">
+                <p>FILM</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- for review....................... -->
+
+    <div>
+        <div class="reviewup">
+            <h1>From the Indiegogo Review</h1>
+            <p>Your behind-the-scenes view of the people and stories behind Indiegogo projects</p>
+        </div>
+        <div id="reviewlow">
+            <div>
+                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1657942099/tvn17vqsxp1pxnjztlq1.png" alt="">
+                <p>This Cute Humidifier Has A Very Fun Feature</p>
+                <p>"I tried this cute desktop humidifier for a day."</p>
+            </div>
+
+            <div>
+                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1657942099/tvn17vqsxp1pxnjztlq1.png" alt="">
+                <p>This Cute Humidifier Has A Very Fun Feature</p>
+                <p>"I tried this cute desktop humidifier for a day."</p>
+            </div>
+
+            <div>
+                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1657942099/tvn17vqsxp1pxnjztlq1.png" alt="">
+                <p>This Cute Humidifier Has A Very Fun Feature</p>
+                <p>"I tried this cute desktop humidifier for a day."</p>
+            </div>
+        </div>
+        <div class="reviewup">
+            <h1>Clever Things For Curious Humans™</h1>
+            <p>There is no better place to start the hunt for something new and special. Begin on Indiegogo to find clever and unconventional things that solve everyday problems large and small.</p>
+            <button>SIGN UP NOW</button>
+            <button> LEARN MORE</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <p>EXPLORE</p>
+            <p>What We Do Funding
+            </p>
+        </div>
+        <div>
+            <p>ABOUT</p>
+            <p>About Us Blog Trust & Safety Help & Support Press Careers Contact
+            </p>
+        </div>
+        <div>
+            <p>ENTREPRENEURS</p>
+            <p>How It Works Indiegogo vs. Kickstarter Education Center Experts Directory Fees Enterprise China
+            </p>
+        </div>
+        <div id="footerimg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-an8sneaSwI303g56ftpC7uR6niM6ePLKA&usqp=CAU" alt="">
+
+            <form>
+                <p>Find it first on Indiegogo</p>
+                <p>Discover new and clever products in the Indiegogo newsletter</p>
+                <input type="email" placeholder="Your email address">
+                <input style="display:inline ;" type="checkbox"> <span> I agree to the Terms of Use and have read and understand the Privacy Policy</span>
+                <input type="submit" value="SIGN ME UP">
+            </form>
+
+        </div>
+        <div id="social">
+            <input type="text" placeholder="₹ Indian Rupee (INR)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRRjfPapLBM6Mwjl7AgA0ar4TlEstOmF32iA&usqp=CAU" alt="">
+        </div>
+    </div>
 
     <!-- sign-up........................ -->
+    <div id="signup"></div>
 
-    <div id="signup">
 
-        <!-- <h1>Welcome!</h1>
-        <h3>Sign up to join Indiegogo.</h3>
-        <div id="form">
-            <form>
-                <label for="">First Name</label>
-                <input type="text" id="firstname" placeholder="Your First Name" />
-                <label for="">Last Name</label>
-                <input type="text" id="lastname" placeholder="Your last Name" />
-                <label for="">Email</label>
-                <input type="email" id="email" placeholder="Your Email">
-                <label for="">Password</label>
-                <input type="password" id="password" placeholder="Your Password">
+    <!-- for login.................................. -->
+    <div id="login"></div>
 
-            </form>
-        </div>
-        <div id="check">
-            <input type="checkbox" name="">I agree to the Terms of Use and have read and understand the Privacy Policy
-        </div>
-        <div id="btn">
-            <button>CREATE ACCOUNT</button> -->
-        <!-- </div> -->
-
-    </div>
 
 </body>
 
 </html>
 
-<!-- for crouser image..... -->
-<script>
-    let imagelinks = ["https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658245112/jczdjyod9b8gdujqvbym.jpg", "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658245274/qeg3izrxrngmn1rnhiju.jpg", "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658244913/mloerh9s6w3vjaqfqddv.jpg", "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658244749/flc5yf33kcubwtirrfyd.jpg"]
 
-    let leftbtn = document.querySelector("#leftbtn");
-    let rightbtn = document.querySelector("#rightbtn");
+
+
+<!-- for popularsection.......... -->
+
+<script>
+    let popularsection = [
+        "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/hsuak6etlkjhpxog1e1u",
+        "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/vzowbkoxoq4hn6uaniyw", "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/m9frz16vbuzaarduoxcw", "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/n4o1ewux6zcyq8vxzj8t",
+        "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/xbe8fhfxafsvjxvw6ydo", "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/fxahub4xktndsdoyuquk", "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/rys8oirdhzlclfakjgmz", "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/b2wudzlxsazgdegzceak", "https://c4.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/svqivngvxps24ezvynuk", "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/uoeabopd85h4hfd1g42p", "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/utzz6lufmq8ygokfvh8e", "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/wqxyxxwvoohw8myiu0pd", "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/sxmefwhoyvwym61r2cgk",
+    ]
+    let popleftbtn = document.querySelector("#popleftbtn");
+    let poprightbtn = document.querySelector("#poprightbtn");
     let imagestate = 0;
-    let crauser = document.querySelector("#crauser")
-    rightbtn.addEventListener("click", function() {
+    let popimage1 = document.querySelector("#popimg1")
+    let popimage2 = document.querySelector("#popimg2")
+    let popimage3 = document.querySelector("#popimg3")
+    let popimage4 = document.querySelector("#popimg4")
+
+    poprightbtn.addEventListener("click", function() {
         imagestate++;
-        if (imagestate === imagelinks.length) {
+
+        if (imagestate === popularsection.length) {
             imagestate = 0;
         }
-
-        crauser.src = imagelinks[imagestate]
+        popimage1.src = popularsection[imagestate]
+        imagestate++;
+        if (imagestate === popularsection.length) {
+            imagestate = 0;
+        }
+        popimage2.src = popularsection[imagestate]
+        imagestate++;
+        if (imagestate === popularsection.length) {
+            imagestate = 0;
+        }
+        popimage3.src = popularsection[imagestate]
+        imagestate++;
+        if (imagestate === popularsection.length) {
+            imagestate = 0;
+        }
+        popimage4.src = popularsection[imagestate]
 
     })
-
-    leftbtn.addEventListener("click", function() {
+    popleftbtn.addEventListener("click", function() {
         imagestate--;
         if (imagestate < 0) {
             imagestate = imagelinks.length - 1
         }
 
-        crauser.src = imagelinks[imagestate]
-
+        popimage1.src = popularsection[imagestate]
+        imagestate--;
+        if (imagestate < 0) {
+            imagestate = imagelinks.length - 2
+        }
+        popimage2.src = popularsection[imagestate]
+        imagestate--;
+        if (imagestate < 0) {
+            imagestate = imagelinks.length - 3
+        }
+        popimage3.src = popularsection[imagestate]
+        imagestate--;
+        if (imagestate < 0) {
+            imagestate = imagelinks.length - 4
+        }
+        popimage4.src = popularsection[imagestate]
     })
 </script>
+<!-- for crouser image..... -->
+<script src="crouser.js"></script>
+
+<!-- for login................... -->
+<script src="login.js"></script>
+
+
 
 <!-- for signup................. -->
+<script src="signup.js"></script>
 
-<script>
-    // <!-- <h1>Welcome!</h1>
-    //     <h3>Sign up to join Indiegogo.</h3>
-    //     <div id="form">
-    //         <form>
-    //             <label for="">First Name</label>
-    //             <input type="text" id="firstname" placeholder="Your First Name" />
-    //             <label for="">Last Name</label>
-    //             <input type="text" id="lastname" placeholder="Your last Name" />
-    //             <label for="">Email</label>
-    //             <input type="email" id="email" placeholder="Your Email">
-    //             <label for="">Password</label>
-    //             <input type="password" id="password" placeholder="Your Password">
-
-    //         </form>
-    //     </div>
-    //     <div id="check">
-    //         <input type="checkbox" name="">I agree to the Terms of Use and have read and understand the Privacy Policy
-    //     </div>
-    //     <div id="btn">
-    //         <button>CREATE ACCOUNT</button>
-    //     // </div> -->
-    document.querySelector("#sign").addEventListener("click", popusign)
-
-    function popusign() {
-
-        let h1 = document.createElement("h1")
-        h1.innerText = "Welcome!"
-        let h3 = document.createElement("h3")
-        h3.innerText = "Sign up to join Indiegogo."
-        let formdiv = document.createElement("div")
-        formdiv.setAttribute("id", "form")
-        let label1 = document.createElement("label")
-        label1.innerText = "First Name"
-        let input1 = document.createElement("input")
-        input1.setAttribute("type", "text")
-        input1.setAttribute("id", "firstname")
-        input1.setAttribute("placeholder", "Enter your first name")
-
-        let label2 = document.createElement("label")
-        label2.innerText = "Last Name"
-        let input2 = document.createElement("input")
-        input2.setAttribute("type", "text")
-        input2.setAttribute("id", "lastname")
-        input2.setAttribute("placeholder", "Enter your last name")
-
-        let label3 = document.createElement("label")
-        label3.innerText = "Email"
-        let input3 = document.createElement("input")
-        input3.setAttribute("type", "email")
-        input3.setAttribute("id", "email")
-        input3.setAttribute("placeholder", "Enter your email")
-
-        let label4 = document.createElement("label")
-        label4.innerText = "Password"
-        let input4 = document.createElement("input")
-        input4.setAttribute("type", "password")
-        input4.setAttribute("id", "password")
-        input4.setAttribute("placeholder", "Enter your password")
-
-        let input5 = document.createElement("input")
-        input5.value = "CREATE ACCOUNT"
-        input5.setAttribute("type", "submit")
-
-
-
-        formdiv.append(label1, input1, label2, input2, label3, input3, label4, input4, input5)
-
-        document.querySelector("#signup").append(h1, h3, formdiv)
-
-    }
-</script>
+<!-- for collection ......... -->
+<script src="collection.js"></script>

@@ -1,0 +1,75 @@
+#medium {
+    text-align: center;
+    font-weight: lighter;
+}
+
+#medium>h1 {
+    font-weight: lighter;
+}
+
+#medium>h3 {
+    font-weight: lighter;
+}
+
+
+/* popular part.............. */
+
+#popular {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: relative;
+}
+
+#poprightbtn {
+    position: absolute;
+    top: 43%;
+    left: 96.5%;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(100, 100, 100, 0.009);
+}
+
+#popleftbtn {
+    position: absolute;
+    top: 45%;
+    left: 0.5%;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    /* color: white; */
+    height: 30px;
+    width: 30px;
+    background-color: rgba(100, 100, 100, 0.009);
+}
+
+#popular>div {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#popular>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#popular>div>img {
+    width: 100%;
+    height: 200px;
+}
+
+#popular>div>img+p {
+    color: rgb(64, 207, 64);
+}
+
+#popular>div>p {
+    font-weight: lighter;
+    color: gray;
+}
+
+#popular>div>h4 {
+    font-weight: lighter;
+}
