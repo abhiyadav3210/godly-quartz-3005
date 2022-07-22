@@ -1,0 +1,20 @@
+#delivery {
+    background-color: grey;
+    text-align: center;
+    height: 300px;
+    padding-top: 10px;
+}
+
+#delivery>p {
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+}
+
+#delivery>input {
+    display: grid;
+    margin: auto;
+    margin-top: 20px;
+    justify-items: center;
+    width: 30%;
+}

@@ -1,0 +1,29 @@
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    height: 10vh;
+}
+
+#navbar>#right {
+    display: flex;
+    gap: 28px;
+    /* border: 1px solid blue; */
+    height: 10vh;
+}
+
+#navbar>#left {
+    display: flex;
+    /* border: 1px solid blue; */
+    gap: 28px;
+    height: 10vh;
+    margin-left: 90px;
+}
+
+#right>div>img {
+    height: 200px;
+    width: 200px;
+    margin-top: -97px;
+    margin-left: -20px;
+}

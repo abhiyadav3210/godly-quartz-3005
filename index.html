@@ -52,8 +52,8 @@
     <div id="navbar">
         <div id="right">
             <div><img src="https://cdn.lovesavingsgroup.com/logos/indiegogo.png" alt=""></div>
-            <div>Explore</div>
-            <div>What We Do</div>
+            <div> Explore</div>
+            <div><a href="whatwe/whatwe.html"> What We Do</a></div>
         </div>
 
         <div id="left">
@@ -181,15 +181,15 @@
             </div>
 
             <div>
-                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1657942099/tvn17vqsxp1pxnjztlq1.png" alt="">
-                <p>This Cute Humidifier Has A Very Fun Feature</p>
-                <p>"I tried this cute desktop humidifier for a day."</p>
+                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1657942041/w5yfymuuhuoo4rn9fbzk.png" alt="">
+                <p>How I Shocked My Bad Sleep Habits Away</p>
+                <p>"I tried this buzzy Shock Clock for a week."</p>
             </div>
 
             <div>
-                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1657942099/tvn17vqsxp1pxnjztlq1.png" alt="">
-                <p>This Cute Humidifier Has A Very Fun Feature</p>
-                <p>"I tried this cute desktop humidifier for a day."</p>
+                <img src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1657941980/hadqok3x8iolygkcsqm7.png" alt="">
+                <p>Learning To Play Piano Is Made Easy</p>
+                <p>"I tried this smart piano and learned to play in a day."</p>
             </div>
         </div>
         <div class="reviewup">
@@ -199,6 +199,7 @@
             <button> LEARN MORE</button>
         </div>
     </div>
+
     <div id="footer">
         <div>
             <p>EXPLORE</p>
@@ -247,76 +248,15 @@
 
 
 
-
-<!-- for popularsection.......... -->
-
 <script>
-    let popularsection = [
-        "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/hsuak6etlkjhpxog1e1u",
-        "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/vzowbkoxoq4hn6uaniyw", "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/m9frz16vbuzaarduoxcw", "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/n4o1ewux6zcyq8vxzj8t",
-        "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/xbe8fhfxafsvjxvw6ydo", "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/fxahub4xktndsdoyuquk", "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/rys8oirdhzlclfakjgmz", "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/b2wudzlxsazgdegzceak", "https://c4.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/svqivngvxps24ezvynuk", "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/uoeabopd85h4hfd1g42p", "https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/utzz6lufmq8ygokfvh8e", "https://c0.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/wqxyxxwvoohw8myiu0pd", "https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/sxmefwhoyvwym61r2cgk",
-    ]
-    let popleftbtn = document.querySelector("#popleftbtn");
-    let poprightbtn = document.querySelector("#poprightbtn");
-    let imagestate = 0;
-    let popimage1 = document.querySelector("#popimg1")
-    let popimage2 = document.querySelector("#popimg2")
-    let popimage3 = document.querySelector("#popimg3")
-    let popimage4 = document.querySelector("#popimg4")
-
-    poprightbtn.addEventListener("click", function() {
-        imagestate++;
-
-        if (imagestate === popularsection.length) {
-            imagestate = 0;
-        }
-        popimage1.src = popularsection[imagestate]
-        imagestate++;
-        if (imagestate === popularsection.length) {
-            imagestate = 0;
-        }
-        popimage2.src = popularsection[imagestate]
-        imagestate++;
-        if (imagestate === popularsection.length) {
-            imagestate = 0;
-        }
-        popimage3.src = popularsection[imagestate]
-        imagestate++;
-        if (imagestate === popularsection.length) {
-            imagestate = 0;
-        }
-        popimage4.src = popularsection[imagestate]
-
-    })
-    popleftbtn.addEventListener("click", function() {
-        imagestate--;
-        if (imagestate < 0) {
-            imagestate = imagelinks.length - 1
-        }
-
-        popimage1.src = popularsection[imagestate]
-        imagestate--;
-        if (imagestate < 0) {
-            imagestate = imagelinks.length - 2
-        }
-        popimage2.src = popularsection[imagestate]
-        imagestate--;
-        if (imagestate < 0) {
-            imagestate = imagelinks.length - 3
-        }
-        popimage3.src = popularsection[imagestate]
-        imagestate--;
-        if (imagestate < 0) {
-            imagestate = imagelinks.length - 4
-        }
-        popimage4.src = popularsection[imagestate]
-    })
 </script>
 <!-- for crouser image..... -->
 <script src="crouser.js"></script>
 
 <!-- for login................... -->
 <script src="login.js"></script>
+
+<script src="popular.js"></script>
 
 
 
