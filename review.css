@@ -12,10 +12,12 @@
 .reviewup>button {
     margin-top: 20px;
     padding: 4px 2px;
-    background-color: #FF0080;
-    border: 0px;
+    background-color: rgb(239, 18, 92);
     font-weight: lighter;
     color: white;
+    border: 0px;
+    font-weight: bolder;
+    padding: 7px 5px;
 }
 
 .reviewup>h1 {

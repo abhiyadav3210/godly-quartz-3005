@@ -52,8 +52,10 @@
     <div id="navbar">
         <div id="right">
             <div><img src="https://cdn.lovesavingsgroup.com/logos/indiegogo.png" alt=""></div>
-            <div> Explore</div>
-            <div><a href="whatwe/whatwe.html"> What We Do</a></div>
+            <div>
+                Explore
+            </div>
+            <div><a href="whatwe/whatwe.html" style="text-decoration:none ; color:black;">What We Do</a></div>
         </div>
 
         <div id="left">
@@ -74,7 +76,14 @@
     <!-- midium portion.............. -->
     <div id="medium">
         <h1>Find it first on Indiegogo.</h1>
+
         <h3>Indiegogo is where early adopters and innovation seekers find lively, imaginative tech before it hits the mainstream.</h3>
+        <button style=" padding: 8px 7px ;background-color: rgb(239, 18, 92) ;
+        color:white; font-weight:bolder ; border: 0px;
+        margin-bottom: 20px;">Sign Up Now</button>
+        <button style=" padding: 8px 7px ;background-color:white  ;
+        color: rgb(239, 18, 92) ; font-weight: bolder ; border: 0px;
+        margin-bottom: 20px;">LEARN MORE</button>
     </div>
 
     <!-- popular project part............. -->
@@ -131,10 +140,10 @@
     <!-- tiltcycle part......... -->
 
     <div id="cycle">
-        <img src="https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/homepage/cf-bg-desktop-lg.jpg" alt="">
         <h1>Back the project, take the ride</h1>
         <p>Indiegogo is your destination for clever innovations in tech, design, and more, often with special perks and pricing for early adopters. Back a campaign, share your ideas and feedback with the project team - and join the risks and rewards of bringing
             new products to life.</p>
+        <img src="https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_1.0,f_auto/homepage/cf-bg-desktop-lg.jpg" alt="">
     </div>
     <div id="category">
         <div id="upper">
@@ -208,13 +217,19 @@
         </div>
         <div>
             <p>ABOUT</p>
-            <p>About Us Blog Trust & Safety Help & Support Press Careers Contact
+            <p>About Us
             </p>
+            <p>Blog Trust & Safety</p>
+            <p>Help & Support Press Careers Contact</p>
         </div>
         <div>
             <p>ENTREPRENEURS</p>
-            <p>How It Works Indiegogo vs. Kickstarter Education Center Experts Directory Fees Enterprise China
+            <p>How It Works
             </p>
+            <p> Indiegogo vs. Kickstarter </p>
+            <p>Education Center</p>
+            <p> Experts Directory Fees</p>
+            <p>Enterprise China</p>
         </div>
         <div id="footerimg">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-an8sneaSwI303g56ftpC7uR6niM6ePLKA&usqp=CAU" alt="">
@@ -224,7 +239,12 @@
                 <p>Discover new and clever products in the Indiegogo newsletter</p>
                 <input type="email" placeholder="Your email address">
                 <input style="display:inline ;" type="checkbox"> <span> I agree to the Terms of Use and have read and understand the Privacy Policy</span>
-                <input type="submit" value="SIGN ME UP">
+                <input style="  background-color: rgb(239, 18, 92);
+                color: white;
+                border: 0px;
+                font-weight: bolder;
+                padding: 6px 5px;
+                margin-top: 20px;" type="submit" value="SIGN ME UP">
             </form>
 
         </div>
@@ -246,9 +266,21 @@
 
 </html>
 
-
-
 <script>
+    let loginls = JSON.parse(localStorage.getItem("login"))
+    if (loginls !== null) {
+        document.querySelector("#left").innerHTML = ""
+        let entrepreneurs = document.createElement("div")
+        entrepreneurs.innerText = "For Entrepreneurs"
+        let campaign = document.createElement("div")
+        campaign.innerText = "Start a Campaign"
+        let name = document.createElement("div")
+        name.setAttribute("id", "navbarname")
+        name.innerText = loginls.name
+
+
+        document.querySelector("#left").append(entrepreneurs, campaign, name)
+    }
 </script>
 <!-- for crouser image..... -->
 <script src="crouser.js"></script>
