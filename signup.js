@@ -2,11 +2,13 @@ document.querySelector("#sign").addEventListener("click", popusign)
 
 function popusign() {
 
+
+
     let h1 = document.createElement("h1")
     h1.innerText = "Welcome!"
     let h3 = document.createElement("h3")
     h3.innerText = "Sign up to join Indiegogo."
-    let formdiv = document.createElement("div")
+    let formdiv = document.createElement("form")
     formdiv.setAttribute("id", "form")
     let label1 = document.createElement("label")
     label1.innerText = "First Name"
@@ -40,11 +42,37 @@ function popusign() {
     input5.value = "CREATE ACCOUNT"
     input5.setAttribute("type", "submit")
     input5.setAttribute("id", "createacc")
-    input5.style.backgroundColor = "rgb(239, 18, 92)"
+        // input5.style.backgroundColor = "rgb(239, 18, 92)"
 
 
     formdiv.append(label1, input1, label2, input2, label3, input3, label4, input4, input5)
 
     document.querySelector("#signup").append(h1, h3, formdiv)
+    local()
+}
 
+
+// responsive part ........
+
+function local() {
+    let form = document.querySelector("#signup>form")
+
+    let signupls = JSON.parse(localStorage.getItem("signup")) || []
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        let obj = {
+            name: form.firstname.value,
+
+            email: form.email.value,
+            password: form.password.value
+        }
+        if (obj.name == "" || obj.email == "" || obj.password == "") {
+            alert("Feild Empty!")
+            return
+        }
+        signupls.push(obj)
+        localStorage.setItem("signup", JSON.stringify(signupls))
+        alert("Signup Complete")
+        window.location.href = "index.html"
+    })
 }
